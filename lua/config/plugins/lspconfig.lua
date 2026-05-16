@@ -61,6 +61,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     --  For example, in C this would take you to the header.
     map('grD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
+    map('gdf', vim.lsp.buf.definition, '[G]oto [D]efinition')
     -- The following two autocommands are used to highlight references of the
     -- word under your cursor when your cursor rests there for a little while.
     --    See `:help CursorHold` for information about when this is executed
@@ -114,7 +115,7 @@ local servers = {
   --    https://github.com/pmizio/typescript-tools.nvim
   --
   -- But for many setups, the LSP (`ts_ls`) will work just fine
-  -- ts_ls = {},
+  ts_ls = {},
 
   basedpyright = {},
   svelte = {},
