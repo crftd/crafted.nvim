@@ -214,5 +214,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function() vim.hl.on_yank() end,
 })
 
+require 'config.rust'
 require 'keymaps'
 require 'plugins'

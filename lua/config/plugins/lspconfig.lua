@@ -182,7 +182,9 @@ local servers = {
 --    :Mason
 --
 -- You can press `g?` for help in this menu.
-local ensure_installed = vim.tbl_keys(servers or {
+local ensure_installed = vim.tbl_keys(servers or {})
+vim.list_extend(ensure_installed, {
+  -- You can add other tools here that you want Mason to install
   'lua-language-server', -- Lua Language server
   'stylua', -- Used to format Lua code
   'prettierd',
@@ -191,9 +193,6 @@ local ensure_installed = vim.tbl_keys(servers or {
   'ruff',
   'svelte-language-server',
   'rust-analyzer',
-})
-vim.list_extend(ensure_installed, {
-  -- You can add other tools here that you want Mason to install
 })
 
 require('mason-tool-installer').setup { ensure_installed = ensure_installed }

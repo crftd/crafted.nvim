@@ -63,7 +63,7 @@ local plugins = {
   gh 'EdenEast/nightfox.nvim',
   gh 'folke/todo-comments.nvim',
   gh 'nvim-mini/mini.nvim',
-  gh 'mrcjkb/rustaceanvim',
+  { src = gh 'mrcjkb/rustaceanvim', version = vim.version.range '^9' },
   gh 'christoomey/vim-tmux-navigator',
   { src = gh 'nvim-treesitter/nvim-treesitter', version = 'main' },
   gh 'windwp/nvim-autopairs',
