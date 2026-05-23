@@ -193,6 +193,7 @@ vim.list_extend(ensure_installed, {
   'ruff',
   'svelte-language-server',
   'rust-analyzer',
+  'markdownlint',
 })
 
 require('mason-tool-installer').setup { ensure_installed = ensure_installed }
