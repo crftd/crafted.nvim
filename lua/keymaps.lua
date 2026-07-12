@@ -2,7 +2,7 @@
 --  See `:help vim.keymap.set()`
 
 -- Tree navigation
-vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>')
+vim.keymap.set('n', '<leader>i', ':Neotree filesystem toggle left<CR>')
 vim.keymap.set('n', '<leader>o', ':Neotree filesystem reveal left<CR>')
 
 -- Open diagnostics

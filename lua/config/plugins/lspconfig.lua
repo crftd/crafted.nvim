@@ -208,7 +208,7 @@ end
 -- Keep this out of the `servers` table above so mason-tool-installer
 -- doesn't try (and fail) to install it.
 vim.lsp.config('racket_langserver', {
-  cmd = { 'racket-langserver' },
+  cmd = { 'racket', '-l', 'racket-langserver' },
   filetypes = { 'racket' },
   root_markers = { 'info.rkt', '.git' },
 })
