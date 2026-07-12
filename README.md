@@ -1,5 +1,9 @@
 # kickstart.nvim
 
+```bash
+raco pkg install racket-langserver
+```
+
 ## Introduction
 
 A starting point for Neovim that is:

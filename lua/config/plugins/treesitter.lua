@@ -24,6 +24,8 @@ local parsers = {
   'sql',
   'bash',
   'zsh',
+  'racket',
+  'scheme',
 }
 
 require('nvim-treesitter').install(parsers)

@@ -202,3 +202,14 @@ for name, server in pairs(servers) do
   vim.lsp.config(name, server)
   vim.lsp.enable(name)
 end
+
+-- racket-langserver: not available via Mason, install manually with
+--   raco pkg install racket-langserver
+-- Keep this out of the `servers` table above so mason-tool-installer
+-- doesn't try (and fail) to install it.
+vim.lsp.config('racket_langserver', {
+  cmd = { 'racket-langserver' },
+  filetypes = { 'racket' },
+  root_markers = { 'info.rkt', '.git' },
+})
+vim.lsp.enable 'racket_langserver'
