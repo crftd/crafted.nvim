@@ -71,7 +71,6 @@ local plugins = {
   gh 'MunifTanjim/nui.nvim',
   gh 'lukas-reineke/indent-blankline.nvim',
   gh 'mfussenegger/nvim-lint',
-  gh 'Olical/conjure',
 }
 
 if vim.fn.executable 'make' == 1 then table.insert(plugins, gh 'nvim-telescope/telescope-fzf-native.nvim') end
