@@ -175,6 +175,10 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- Turn on spellcheck
+vim.o.spell = true
+vim.o.spelllang = 'en_us,ru_yo'
+
 -- Diagnostic Config & Keymaps
 -- See :help vim.diagnostic.Opts
 vim.diagnostic.config {
